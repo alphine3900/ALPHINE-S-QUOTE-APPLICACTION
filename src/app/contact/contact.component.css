@@ -1,0 +1,21 @@
+#contact{
+    background-color: cadetblue;
+height: 400px;
+}
+
+#contact p{
+
+    font-size: 5px;
+    text-align: left;
+    color: black;
+    width: 50%;
+    margin-top: 50px; 
+}
+#contact h1{
+    margin-top: 30px;
+    text-align: center;
+}
+.half{
+    float: right;
+    margin-top: -180px;
+}
