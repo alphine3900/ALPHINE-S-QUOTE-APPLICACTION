@@ -6,3 +6,6 @@
     background-color: cadetblue;
     height: 600px;
 }
+#display{
+    float: right;
+}
