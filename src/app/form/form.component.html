@@ -1,0 +1,32 @@
+<div class="form">
+   <div class="col-md-6">
+    <form  #form="ngForm">
+        <div class="form-group">
+            <label for="name">Author</label>
+            <input type="text" name="name" id="name" class="form-control" required ngModel #name="ngModel">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" class="form-control" required ngModel #email="ngModel" email>
+        </div>
+        <div class="form-group">
+            <label for="quote">Write a Quote</label>
+            <textarea type="text" name="quote" id="quote" class="form-control" cols="3" required ngModel
+                #quote="ngModel"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary mt-2" (click)="onsubmitData(name, email, quote)">Submit
+            Quote</button>
+    </form>
+</div>
+ <div class="col-md-6" *ngFor="let quote of quotes; let i = index">
+     <ul>
+        <li>{{quote.name}}</li>
+        <li>{{quote.email}}</li>
+        <li>{{quote.quote}}</li>
+        <strong (click)="addUpvote(i)">Upvote</strong> {{quote.upvote}}| | <strong>Downvote</strong> 0
+        <br />
+        <button type="button" class="btn btn-outline-danger" (click)="deletQuote(i)">Delete Quote</button>
+    
+     </ul>
+    </div>  
+</div>
