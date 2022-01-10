@@ -6,7 +6,7 @@
             <input type="text" name="name" id="name" class="form-control" required ngModel #name="ngModel">
         </div>
         <div class="form-group">
-            <label for="email">Email</label>
+            <label for="email">email</label>
             <input type="text" name="email" id="email" class="form-control" required ngModel #email="ngModel" email>
         </div>
         <div class="form-group">
@@ -24,7 +24,7 @@
         <li>{{quote.email}}</li>
         <li>{{quote.quote}}</li>
         <strong (click)="addUpvote(i)">Upvote</strong> {{quote.upvote}}| | 
-        <strong (click)="addDownvote(i)">Downvote</strong> 0 {{quote.Downvote}}
+        <strong (click)="addDownvote(i)">Downvote</strong> {{quote.downvote}}
         <br />
         <button type="button" class="btn btn-outline-danger" (click)="deletQuote(i)">Delete Quote</button>
     

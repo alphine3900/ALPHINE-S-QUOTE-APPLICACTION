@@ -35,7 +35,7 @@ export class FormComponent implements OnInit {
     console.log(this.quotes[index].upvote += 1)
   }
   addDownvote(index: number){
-    console.log(this.quotes[index].Downvote += 1)
+    console.log(this.quotes[index].downvote += 1)
   }
   deletQuote(index: number){
     this.quotes.splice(index, 1)
