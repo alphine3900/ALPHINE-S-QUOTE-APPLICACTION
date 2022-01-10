@@ -16,6 +16,7 @@ export class FormComponent implements OnInit {
   ]
   upvote = 0;
   downvote = 0;
+  currentDate = new Date()
   constructor() { }
 
   ngOnInit(): void {
@@ -28,7 +29,8 @@ export class FormComponent implements OnInit {
       email: email.value,
       quote: quote.value,
       upvote: this.upvote,
-      downvote: this.downvote
+      downvote: this.downvote,
+      currentDate: this.currentDate,
     })
   }
   addUpvote(index: number){
