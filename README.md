@@ -9,7 +9,7 @@ clone the project from the repository and run in the browser
  1. CSS
  1.Angular
  ## live site
- [click here]()
+ [click here](https://alphine3900.github.io/ALPHINE-S-QUOTE-APPLICACTION/)
 ## license
 
 Copyright (c) [2021] [Alphine mutwiri kirimi]
